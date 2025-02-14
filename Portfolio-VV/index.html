@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>Venkatanathan V - Portfolio</title>
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" id="themeStylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="./index.html"><span class="logo">CSBS STUDENT</span></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div>
+                <div>
+                    <h4 title="Hello, How are you?">Hi, There!</h4>
+                    <h2 class="hero-section__title">I'm <span>Venkatanathan V</span></h2>
+                    <p class="hero-section__desc">A passionate Computer Science and Business Systems (CSBS) student at 
+                        Saranathan College of Engineering, also pursuing B.Sc Data Science at IIT Madras. 
+                        Interested in AI, software development, and business applications of technology.</p>
+                </div>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://in.linkedin.com/in/venkatanathan-varadharajan-750790293" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Hire me</button>
+                    <button class="btn btn-dark-outlined">
+                        <a href="./assets/my resume/my resume.pdf" download>Download CV</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="assets/img/Venkat.jpg" alt="Venkatanathan V Portfolio" width="350">
+            </div>
+        </section>
+
+        <!-- About Section  -->
+        <section class="about-section" id="about">
+            <div class="about-img">
+                <img src="assets/img/Venkat.jpg" alt="Venkatanathan V Portfolio">
+            </div>
+
+            <div class="about-content">
+                <h4>About Me</h4>
+                <h2>AI & Software Developer | <br> <span>CSBS Student</span></h2>
+                <p>Hello! I'm Venkatanathan V, currently studying CSBS at Saranathan College of Engineering 
+                    and B.Sc Data Science at IIT Madras. I am passionate about **software development, AI, and finance tech**. 
+                    My projects focus on AI-powered solutions, automation, and business intelligence. 
+                    I believe in **building technology that solves real-world problems** efficiently.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2>My <span>Projects</span></h2>
+            <div class="projects-cards">
+
+                <!-- Student Database Application -->
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Student Database Application</h4>
+                        <p>A **Tkinter-based student management system** with HoD and student login. 
+                           It allows student information storage, search, and access restrictions 
+                           based on specific rules. Ensures **smooth UI with optimized search options**.</p>
+                    </div>
+                </div>
+
+                <!-- Finance AI Companion -->
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Finance AI Companion</h4>
+                        <p>An **AI-powered loan processing and financial transparency system**. 
+                           Uses machine learning to analyze financial data, 
+                           assess risk, and **provide instant loan recommendations**.</p>
+                    </div>
+                </div>
+
+                <!-- Farmer Direct Market Access App -->
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-tractor"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Farmer Direct Market Access App</h4>
+                        <p>A **mobile app developed in Kotlin** for Smart India Hackathon. 
+                           Enables farmers to **sell directly to buyers** without middlemen, 
+                           ensuring **better pricing and fair trade**.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2>Contact <span>ME!</span></h2>
+            <form action="">
+                <div>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Type Message" rows="5"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary">SEND MESSAGE</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 - 
+            <a href="https://in.linkedin.com/in/venkatanathan-varadharajan-750790293" target="_blank">
+                Venkatanathan V
+            </a> - All Rights Reserved.</p>
+
+        <div class="footer-buttons">
+            <button data-theme="./assets/css/style.css" class="footer__theme1 active-theme">Theme 1</button>
+            <button data-theme="./assets/css/style-two.css" class="footer__theme2">Theme 2</button>
+            <button data-theme="./assets/css/style-three.css" class="footer__theme3">Theme 3</button>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

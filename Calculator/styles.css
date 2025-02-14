@@ -1,0 +1,98 @@
+body {
+  background-color: #000;
+  font-family: "SF Pro Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 320px;
+  padding: 20px;
+}
+
+.glassmorphism-calculator {
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display Screen */
+.result-screen {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Button Grid */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Number Buttons - Gradient */
+.calculator-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.calculator-button:hover {
+  background: linear-gradient(135deg, #4c00ff, #00c3ff);
+  transform: scale(1.05);
+}
+
+/* Orange Operator Buttons */
+.operator {
+  background: linear-gradient(135deg, #ff7b00, #ffcc00);
+  color: white;
+}
+
+.operator:hover {
+  background: linear-gradient(135deg, #cc6a00, #ff9900);
+}
+
+/* Function Buttons (AC, ±, %) */
+.function {
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  color: black;
+}
+
+.function:hover {
+  background: linear-gradient(135deg, #2a5db0, #00b3ff);
+}
+
+/* Equal Button - Special Glow Effect */
+.equal {
+  background: linear-gradient(135deg, #ff007a, #ff00ff);
+  box-shadow: 0 0 10px rgba(255, 0, 122, 0.8);
+}
+
+.equal:hover {
+  background: linear-gradient(135deg, #cc0063, #cc00cc);
+}
+
+/* Zero Button - Wider */
+.zero {
+  grid-column: span 2;
+  width: 130px;
+  border-radius: 30px;
+}

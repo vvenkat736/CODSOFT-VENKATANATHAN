@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Exchange</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Book Exchange</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explore">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-center">
+                <h1>Discover & Share Books</h1>
+                <p>Exchange books with fellow readers. Share knowledge and grow together.</p>
+                <a href="#explore" class="btn btn-primary">Browse Books</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./assets/bookshelf.jpg" alt="Book Exchange" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>About Us</h2>
+                        <p>Book Exchange is a community-driven platform where book lovers can swap, share, and discover 
+                           books. Whether you want to give away a book you've finished or find your next read, 
+                           this is the perfect place!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Books Section -->
+        <section class="explore" id="explore">
+            <div class="container">
+                <h2>Explore Available Books</h2>
+                <p>Find books from different genres available for exchange.</p>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="./assets/book1.jpg" alt="Book 1" class="img-fluid">
+                        <p><strong>Title:</strong> The Great Gatsby</p>
+                        <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/book2.jpg" alt="Book 2" class="img-fluid">
+                        <p><strong>Title:</strong> To Kill a Mockingbird</p>
+                        <p><strong>Author:</strong> Harper Lee</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/book3.jpg" alt="Book 3" class="img-fluid">
+                        <p><strong>Title:</strong> 1984</p>
+                        <p><strong>Author:</strong> George Orwell</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/book4.jpg" alt="Book 4" class="img-fluid">
+                        <p><strong>Title:</strong> The Hobbit</p>
+                        <p><strong>Author:</strong> J.R.R. Tolkien</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or want to list a book? Get in touch with us!</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Book Exchange. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                event.preventDefault();
+                const target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
